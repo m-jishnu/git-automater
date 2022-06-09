@@ -7,5 +7,6 @@ commit_msg = f'git commit -m "{list(sys.argv)[1]}"'
 lst = ["git add .", commit_msg, "git push"]
 
 for i in lst:
-    print('ran:', i)
+    print(f'ran: {i}')
     subprocess.run(f"{i}")
+    print('')
